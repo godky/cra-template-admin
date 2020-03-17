@@ -1,0 +1,60 @@
+{
+  "name": "cra-template-admin",
+  "version": "1.0.1",
+  "homepage": "https://github.com/godky/cra-template-admin",
+  "description": "An admin-template of Create React App template based on antd Pro",
+  "main": "template.json",
+  "author": "godky",
+  "keywords": [
+    "antd",
+    "antd Pro",
+    "react",
+    "admin-template",
+    "cra",
+    "cra-template",
+    "template"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/godky/cra-template-admin.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.10"
+  },
+  "bugs": {
+    "url": "https://github.com/godky/cra-template-admin/issues"
+  },
+  "files": [
+    "template",
+    "template.json"
+  ],
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "husky": { "hooks": { "pre-commit": "npm run lint-staged" } },
+  "lint-staged": {
+    "**/*.less": "stylelint --syntax less",
+    "**/*.{js,jsx,ts,tsx}": "npm run lint-staged:js",
+    "**/*.{js,jsx,tsx,ts,less,md,json}": ["prettier --write"]
+  },
+  "browserslist": ["> 1%", "last 2 versions", "not ie <= 10"],
+  "optionalDependencies": { "puppeteer": "^2.0.0" },
+  "engines": { "node": ">=10.0.0" },
+  "checkFiles": [
+    "src/**/*.js*",
+    "src/**/*.ts*",
+    "src/**/*.less",
+    "config/**/*.js*",
+    "scripts/**/*.js"
+  ]
+}
